@@ -25,7 +25,7 @@ questionBlocks.forEach(function (question) {
 
 const showResultButton = document.getElementById("show-result");
 
-showResultButton.addEventListener("click", function () {
+function displayResult() {
 
     const selectedAnswers = document.querySelectorAll(".answer-btn.selected");
 
@@ -88,4 +88,6 @@ showResultButton.addEventListener("click", function () {
 
     resultContainer.style.display = "block";
 
-});
+}
+
+showResultButton.addEventListener("click", displayResult);
