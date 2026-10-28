@@ -29,7 +29,9 @@ body {
     border-color: #dc3545;
 }
 
-.answer-btn.selected, answer-btn.selected:hover {
+.answer-btn.selected,
+.answer-btn.selected:hover,
+.answer-btn.selected:focus {
     background-color: #b30000;
     color: white;
     border-color: #ff4444;
