@@ -1,57 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Personality Quiz</title>
-    <link rel="icon" type="image/x-icon" href="/img/ideas.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href ="./css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Would You Survive a Horror Movie?</title>
+  <link rel="icon" type="image/x-icon" href="/img/pumpkin.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <h1 class="text-center mt-4">YOUR QUIZ TITLE HERE</h1>
-    
-    <!-- Start quiz element -->
-    <div class="container d-flex justify-content-center" id="question-1">
-      <div class="card my-4 p-4 question-block" style="width: 75%;">
-        <h4 class="mb-3">YOUR QUIZ QUESTION HERE</h4>
-        <div class="row g-2">
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">ANSWER CHOICE A</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">ANSWER CHOICE B</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">ANSWER CHOICE C</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">ANSWER CHOICE D</button>
-          </div>
+  <h1 class="text-center mt-4">🎃Would You Survive a Horror Movie?🎃</h1>
+  <p class="text-center">Five questions. One horror movie. Your survival instincts-or lack thereof-will determine your
+    fate!</p>
+
+  <!-- Start quiz element -->
+  <div class="container d-flex justify-content-center" id="question-1">
+    <div class="card my-4 p-4 question-block" style="width: 75%;">
+      <h3 class="text-center mb-3 horror-heading">🔪 The Basement Incident</h3>
+      <h4 class="mb-3">It's 2:47 AM. You're home alone when you hear someone whisper your FULL GOVERNMENT NAME from the
+        basement. What are you doing?</h4>
+      <div class="row g-2">
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">"Absolutely not!" I'm leaving. The
+            ghost can have the mortgage.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Grab the nearest weapon. Somebody's
+            about to catch these hands!</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Yell "WHO IS THAT?!" and walk
+            downstairs like I have nine lives.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Check the security cameras. I'm not
+            investigating anything without evidence.</button>
         </div>
       </div>
     </div>
+  </div>
 
-    
-    
-    <!-- End quiz element -->
-
-    <!-- Add more quiz elements here -->
-
-
-
-    <div class="container d-flex justify-content-center">
-      <button id="show-result" class="btn btn-success my-4">Show Results</button>
-    </div>    
-    <!-- Output the result here -->
-    <div class="container d-flex justify-content-center">
-      <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;">
-        <h3>Your Result:</h3>
-        <p id="result-text"></p>
+  <div class="container d-flex justify-content-center" id="question-2">
+    <div class="card my-4 p-4 question-block" style="width: 75%;">
+      <h3 class="text-center mb-3 horror-heading">	👻 The Killer Has Arrived</h3>
+      <h4 class="mb-3">You're walking home when a seven-foot masked killer appears behind you. He starts walking toward you at an unsettingly slow pace. What's your move?</h4>
+      <div class="row g-2">
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Sprint like I'm competing for an Olympic Gold medal. BYEEE</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Grab a brick. If I'm going down, we're BOTH going down.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Trip over absolutely nothing, then turn around to see how close he is.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Lead him somewhere I can trap him. Work smarter, not harder.</button>
+        </div>
       </div>
     </div>
-    
-    <!-- Connect to your script file here -->
-     <script src = "./js/script.js"></script>
+  </div>
+
+  <div class="container d-flex justify-content-center" id="question-3">
+    <div class="card my-4 p-4 question-block" style="width: 75%;">
+      <h3 class="text-center mb-3 horror-heading">	🩸 The Worst Group Project Ever</h3>
+      <h4 class="mb-3">Your friends want to split up inside an abandoned psychiatric hospital because "we'll cover more ground." What's your response?</h4>
+      <div class="row g-2">
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">"Y'all have fun!" I'm already halfway to the parking lot.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Stay with the group and prepare to fight whatever shows up.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Agree to investigate the creepy hallway by myself. What's the worst that could happen?</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Barricade the exits, check the building layout, and make an escape plan.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-center" id="question-4">
+    <div class="card my-4 p-4 question-block" style="width: 75%;">
+      <h3 class="text-center mb-3 horror-heading">📱 Technology Has Betrayed You</h3>
+      <h4 class="mb-3">You're lost in the woods at midnight. Your phone is at 1%, something is growling behind you, and your flashlight just died. What's the plan?</h4>
+      <div class="row g-2">
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Call 911 immediately and start moving toward civilization.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Turn around and scream, "COME GET SOME THEN!"</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Start recording a TikTok. At least my final moments might go viral.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Use the last 1% to check my GPS coordinates and memorize the route out.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-center" id="question-5">
+    <div class="card my-4 p-4 question-block" style="width: 75%;">
+      <h3 class="text-center mb-3 horror-heading">	🚗 The Final Showdown</h3>
+      <h4 class="mb-3">You've made it to your car! Unfortunately, Michael Myers is standing directly behind it. Your keys are in your hand. What happens next?</h4>
+      <div class="row g-2">
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Get in, lock the doors, and DRIVE. That car better start TODAY.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Grab the tire iron from the trunk. It's time for a boss battle.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Drop my keys, scream, and somehow run directly toward Michael.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Trigger the car alarm as a distraction, then escape another way.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container d-flex justify-content-center">
+    <button id="show-result" class="btn btn-success my-4">Show Results</button>
+  </div>
+  <!-- Output the result here -->
+  <div class="container d-flex justify-content-center">
+    <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;">
+      <h3 class="text-center">💀 Your Fate Has Been Decided 💀</h3>
+      <h4 id="result-title" class="text-center"></h4>
+      <p id="result-text" class="text-center"></p>
+    </div>
+  </div>
+
+  <!-- Connect to your script file here -->
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
